@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% block content %}
+
+<center>
+    <br>
+    <h2>Brain Tumor Classification Using Deep Learning</h2>
+    <br>
+
+    <!-- Form for uploading image -->
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <!-- Image preview section -->
+    <div class="image-section" style="display:none;">
+        <img id="imagePreview" class="img-responsive" src="#" style="width:300px;height:300px;">
+        <br><br>
+        <div>
+            <button type="button" class="btn btn-info btn-lg" id="btn-classify">Classify!</button>
+        </div>
+    </div>
+
+    <!-- Loader animation -->
+    <div class="loader" style="display:none;"></div>
+
+    <!-- Result display -->
+    <h3 id="result">
+        <span></span>
+    </h3>
+</center>
+
+<!-- Include the prediction script -->
+<script src="{{ url_for('static', filename='js/newjs.js') }}"></script>
+
+{% endblock %}

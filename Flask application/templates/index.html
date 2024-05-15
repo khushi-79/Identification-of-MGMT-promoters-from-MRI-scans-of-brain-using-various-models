@@ -1,0 +1,24 @@
+{% extends "import.html" %} 
+
+{% block content %}
+<center>
+    <div class="float-container">
+    <!-- First prediction section -->
+    <div class="float-child">
+        <h4>Detecting Tumor</h4>
+        
+
+        <a href="{{ url_for('prediction_page') }}">Go to Prediction</a>
+    </div>
+
+    
+    <!-- Second prediction section -->
+    <div class="float-child">
+        
+        <h4>Classify Tumor</h4>
+
+        <a href="{{ url_for('classification_page') }}">Go to classification</a>
+    </div>
+</div>
+</center>
+{% endblock %}
