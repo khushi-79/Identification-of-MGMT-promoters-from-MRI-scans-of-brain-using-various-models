@@ -18,7 +18,7 @@ This project focuses on developing an AI and ML-driven tool for brain tumor iden
      - Artificial Neural Network (ANN)
      - ResNet
      - Random Forest
-     - VGG19 with PCA
+     - VGG19
 
 3. **Results:**
    - The highest accuracy achieved was 95% using the ResNet model.
